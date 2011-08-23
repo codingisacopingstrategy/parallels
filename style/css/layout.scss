@@ -1,3 +1,25 @@
+
+/* green variations */
+$background: #9AAB84;
+$lightbackground: #CBFFBD;
+$headerbackground: #819565;
+
+/* greys */
+$nearblack: #222;
+$dark: #5a5b5f; /* with blue (once)*/
+$kindofneutral: #B5BFB2; /* with green */
+$neutral: #bfbfbf; /* (once) */
+$neutralborder: #ddd;
+$white: #fff;
+
+/* more random greys */
+$miscgrey: #ccc;
+
+$accentdark: #761D19;
+
+$sansone: Helvetica, Arial, sans-serif;
+$sanstwo: Arial, Helvetica, sans-serif;
+
 /* LAYOUT */
 
 
@@ -5,7 +27,7 @@
 /* text highlighting block */
 .selected_para 
 {
-	background-color: #CBFFBD;
+	background-color: $lightbackground;
 	margin: 0;
 	padding: 7px;
 	-moz-border-radius: 10px;
@@ -20,13 +42,13 @@
 
 body
 {
-	background: #9AAB84;
-	color: #222;
+	background: $background;
+	color: $nearblack;
 }
 
 a 
 {
-	color:#222;
+	color:$nearblack;
 	text-decoration: none;
 }
 
@@ -55,21 +77,21 @@ a.skip:visited
 	overflow: hidden;
 	z-index: 2000;
 	font-size: 1.55em;
-	border: 5px solid #B5BFB2;
+	border: 5px solid $kindofneutral;
 	margin: 0;
 	padding: 10px 0;
-	background: #9AAB84;
+	background: $background;
 	-moz-border-radius: 22px;
 	-khtml-border-radius: 22px;
 	-webkit-border-radius: 22px;
 	border-radius: 22px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: $sanstwo;
 }
 
 a.skip:active, 
 a.skip:focus
 {
-	color: #fff;
+	color: $white;
 	position: absolute;
 	top: 36px;
 	left: 1%;
@@ -91,11 +113,11 @@ Book Header
 {
 	width: 100%;
 	height: 67px;
-	border-bottom: 2px solid #B5BFB2;
+	border-bottom: 2px solid $kindofneutral;
 	position: fixed;
 	z-index: 1999;
 	top: 32px;
-	background: #819565;
+	background: $headerbackground;
 	overflow: hidden;
 }
 
@@ -164,23 +186,23 @@ Wordpress user links
 			margin: 0 10px 0 0;
 			padding: 4px 6px 2px 6px;
 			text-decoration: none;
-			background-color: #9AAB84;
+			background-color: $background;
 			text-transform: uppercase;
-			color: #ddd;
-			font-family: Helvetica, Arial, sans-serif;
+			color: $neutralborder;
+			font-family: $sansone;
 		}	
 	
 		#user_links ul li a:hover
 		{
-			background-color: #9AAB84;
-			color: #fff;
+			background-color: $background;
+			color: $white;
 		}	
 	
 		#user_links ul li a:active,
 		#user_links ul li a:focus
 		{
-			color: #9AAB84;
-			background-color: #CBFFBD;
+			color: $background;
+			background-color: $lightbackground;
 		}	
 
 	
@@ -209,8 +231,8 @@ Header
 		clear: left;
 		float: left;
 		width: 100%;
-		background: #bfbfbf url(../images/buttonbar_bgr.jpg) repeat-x;
-		border-bottom: 2px solid #B5BFB2;
+		background: $neutral url(../images/buttonbar_bgr.jpg) repeat-x;
+		border-bottom: 2px solid $kindofneutral;
 		height: 30px;
 	}
 	
@@ -400,9 +422,9 @@ Header
 				text-align: center;
 				margin: 0;
 				padding: 10px 0 0 0;
-				font-family: Helvetica, Arial, sans-serif;
+				font-family: $sansone;
 				font-size: 12px;
-				color: #5a5b5f;
+				color: $dark;
 			}
 			
 		
@@ -429,7 +451,7 @@ Search
 	{
 		float: left;
 		padding: 5px 6px 2px 6px;
-		font-family: Helvetica, Arial, sans-serif;
+		font-family: $sansone;
 		font-size: 0.7em;
 		color: #eee;
 		visibility: hidden; /* hide, but not from screen-readers */
@@ -494,8 +516,8 @@ Main Wrapper
 	padding: 0;
 	margin: 0 0 0 1%;
 	margin-bottom: 10px;
-	background: #fff;
-	border: 5px solid #B5BFB2;
+	background: $white;
+	border: 5px solid $kindofneutral;
 	-webkit-box-shadow: #888 2px 2px 5px;
 	-moz-box-shadow: #888 2px 2px 5px;
 	-khtml-box-shadow: #888 2px 2px 5px;
@@ -513,7 +535,7 @@ Main Wrapper
 	margin: 0;
 	min-height: 620px;
 	height: 99%;
-	background: #fff;
+	background: $white;
 }
 
 	.post 
@@ -590,7 +612,7 @@ span.commenticonbox a.para_permalink
 
 	span.commenticonbox a.para_permalink:focus
 	{
-		background-color: #CBFFBD;
+		background-color: $lightbackground;
 	}
 	
 	span.commenticonbox a.no_comments 
@@ -649,7 +671,7 @@ blockquote span.commenticonbox
 
 .navigation a
 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: $sanstwo;
 	font-weight: normal;
 	font-size: 80%;
 }
@@ -660,7 +682,7 @@ blockquote span.commenticonbox
 	margin-bottom: 35px;
 	padding-right: 25px;
 	font-size: .8em;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: $sansone;
 	color: #888;
 	text-align: center;
 }
@@ -671,7 +693,7 @@ blockquote span.commenticonbox
 	margin-bottom: -35px;
 	padding-right: 25px;
 	font-size: .8em;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: $sansone;
 	color: #888;
 	text-align: center;
 }
@@ -683,7 +705,7 @@ blockquote span.commenticonbox
 {
 	color: #666;
 	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: $sanstwo;
 	font-weight: normal;
 	font-size: 80%;
 }	
@@ -699,8 +721,8 @@ blockquote span.commenticonbox
 	padding: 5px 0;
 	margin: 15px 0;
 	list-style-type: none;
-	border-top: 1px solid #B5BFB2;
-	border-bottom: 1px dotted #B5BFB2;
+	border-top: 1px solid $kindofneutral;
+	border-bottom: 1px dotted $kindofneutral;
 }
 
 div.multipager .multipager_sep
@@ -775,8 +797,8 @@ Sidebar
 	#sidebar_inner
 	{
 		padding: 5px 5px 5px 5px;
-		background: #fff;
-		border: 3px solid #B5BFB2;
+		background: $white;
+		border: 3px solid $kindofneutral;
 		-moz-border-radius: 8px;
 		-khtml-border-radius: 8px;
 		-webkit-border-radius: 8px;
@@ -786,11 +808,11 @@ Sidebar
 		/* toc header */
 		div.sidebar_header
 		{
-			border-bottom: 2px solid #B5BFB2;
+			border-bottom: 2px solid $kindofneutral;
 			padding: 3px;
 			height: 25px;
 			color: #444;
-			background: #fff;
+			background: $white;
 		}
 		
 		.sidebar_minimiser
@@ -840,7 +862,7 @@ body.cp_sidebar_toc #toc_sidebar
 		
 		#toc_sidebar .sidebar_minimiser ul#toc_list
 		{
-			border-bottom: 1px solid #ddd;
+			border-bottom: 1px solid $neutralborder;
 		}
 		
 		#toc_sidebar .sidebar_minimiser ul li ul
@@ -853,7 +875,7 @@ body.cp_sidebar_toc #toc_sidebar
 		{
 			padding: 0;
 			margin: 0;
-			border-top: 1px solid #ddd;
+			border-top: 1px solid $neutralborder;
 		}
 		
 		#toc_sidebar .sidebar_minimiser ul li ul li
@@ -864,12 +886,12 @@ body.cp_sidebar_toc #toc_sidebar
 		
 		#toc_sidebar .sidebar_minimiser ul li a
 		{
-			font-family: Helvetica, Arial, sans-serif;
+			font-family: $sansone;
 			font-weight: normal;
 			font-size: 80%;
 			padding: 4px 4px;
 			display: block;
-			background: #fff;
+			background: $white;
 			margin: 0;
 		}
 		
@@ -919,7 +941,7 @@ body.cp_sidebar_archive #archive_sidebar
 		{
 			margin: 0;
 			padding: 0;
-			border-bottom: 1px solid #ddd;
+			border-bottom: 1px solid $neutralborder;
 		}
 		
 		#archive_sidebar .sidebar_minimiser ul li ul
@@ -932,7 +954,7 @@ body.cp_sidebar_archive #archive_sidebar
 		{
 			padding: 0;
 			margin: 0;
-			border-top: 1px solid #ddd;
+			border-top: 1px solid $neutralborder;
 		}
 		
 		#archive_sidebar .sidebar_minimiser ul li ul li
@@ -943,12 +965,12 @@ body.cp_sidebar_archive #archive_sidebar
 		
 		#archive_sidebar .sidebar_minimiser ul li a
 		{
-			font-family: Helvetica, Arial, sans-serif;
+			font-family: $sansone;
 			font-weight: normal;
 			font-size: 80%;
 			padding: 4px 4px;
 			display: block;
-			background: #fff;
+			background: $white;
 			margin: 0;
 		}
 		
@@ -1003,7 +1025,7 @@ body.cp_sidebar_comments #comments_sidebar
 	div.comments_container
 	{
 		padding: 10px;
-		border-top: 1px solid #B5BFB2;
+		border-top: 1px solid $kindofneutral;
 	}
 	
 	/* comments in page */
@@ -1016,7 +1038,7 @@ body.cp_sidebar_comments #comments_sidebar
 	.comments_container h3
 	{
 		background: #EFEFEF;
-		border-bottom: 1px solid #B5BFB2;
+		border-bottom: 1px solid $kindofneutral;
 	}
 	
 	/* wrapper for all comments for a partcular paragraph */
@@ -1030,7 +1052,7 @@ body.cp_sidebar_comments #comments_sidebar
 	.comment-identifier
 	{
 		margin: 0 0 0 0;
-		border-bottom: 2px solid #B5BFB2;
+		border-bottom: 2px solid $kindofneutral;
 		padding-bottom: 5px;
 	}
 	
@@ -1043,7 +1065,7 @@ body.cp_sidebar_comments #comments_sidebar
 	{
 		clear: left;
 		padding: 10px 5px 0 5px;
-		border-bottom: 1px dashed #B5BFB2;
+		border-bottom: 1px dashed $kindofneutral;
 		margin: 0;
 		overflow: hidden;
 	}
@@ -1063,21 +1085,21 @@ body.cp_sidebar_comments #comments_sidebar
 	{
 		display: block;
 		padding: 4px 0 4px 4px;
-		border-bottom: 1px dashed #B5BFB2;
+		border-bottom: 1px dashed $kindofneutral;
 	}
 	
 	div.reply_to_para
 	{
 		padding: 0;
 		margin: 0;
-		border-bottom: 1px dashed #B5BFB2;
+		border-bottom: 1px dashed $kindofneutral;
 	}
 	
 	/* wrapper for all comments */
 	ol.commentlist
 	{
 		list-style: none;
-		background: #fff;
+		background: $white;
 		margin: 0;
 		padding: 0;
 	}
@@ -1127,7 +1149,7 @@ body.cp_sidebar_comments #comments_sidebar
 	
 	div.reply_to_para
 	{
-		background-color: #fff;
+		background-color: $white;
 		margin: 0;
 	}
 	
@@ -1149,7 +1171,7 @@ body.cp_sidebar_comments #comments_sidebar
 	/* wrapper for comment form */
 	div#respond
 	{
-		background-color: #CBFFBD;
+		background-color: $lightbackground;
 		margin: 0;
 		padding: 8px 8px;
 	}
@@ -1192,8 +1214,8 @@ body.cp_sidebar_comments #comments_sidebar
 	{
 		margin: 0;
 		padding: 6px 0;
-		background: #fff;
-		border-bottom: 1px solid #B5BFB2;
+		background: $white;
+		border-bottom: 1px solid $kindofneutral;
 	}
 
 	.post ol.children li, 
@@ -1229,10 +1251,10 @@ body.cp_sidebar_comments #comments_sidebar
 	/* wrapper for comment form */
 	#respond_in_page_wrapper div#respond
 	{
-		background-color: #fff;
+		background-color: $white;
 		margin: 12px 0;
 		padding: 10px;
-		background-color: #CBFFBD;
+		background-color: $lightbackground;
 	}
 	
 	/* comments */
@@ -1256,8 +1278,8 @@ Footer
 	margin: 0 0 0 1%;
 	width: 58%;
 	background: transparent;
-	background: #819565;
-	border: 5px solid #819565;
+	background: $headerbackground;
+	border: 5px solid $headerbackground;
 	-webkit-box-shadow: #888 2px 2px 5px;
 	-moz-box-shadow: #888 2px 2px 5px;
 	-khtml-box-shadow: #888 2px 2px 5px;
@@ -1266,9 +1288,9 @@ Footer
 #footer_inner,
 #footer_inner a
 {
-	color: #819565;
+	color: $headerbackground;
 	color: #BBC5B9;
-	color: #B5BFB2;
+	color: $kindofneutral;
 }
 
 #footer_inner
@@ -1288,12 +1310,12 @@ Footer
 
 #content .post ul.all_comments_listing 
 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: $sansone;
 	font-size: 90%;
 	list-style: none;
 	padding: 0;
 	margin: 0 7px 30px 7px;
-	border-bottom: 1px solid #B5BFB2;
+	border-bottom: 1px solid $kindofneutral;
 }
 
 	#content .post ul.all_comments_listing ul
@@ -1330,7 +1352,7 @@ Footer
 	#content .post ul.all_comments_listing h3 
 	{
 		font-size: 1em;
-		color: #761D19;
+		color: $accentdark;
 		cursor: pointer;
 		padding: 5px 0;
 		margin: 0 0 0 0;
@@ -1354,7 +1376,7 @@ Footer
 	
 	#content .post ul.all_comments_listing div.item_body div.comment_wrapper
 	{
-		border-top: 2px solid #B5BFB2;
+		border-top: 2px solid $kindofneutral;
 		padding: 1px 0 0 0;
 		margin: 10px 0 0 0;
 		font-family: Georgia;
@@ -1365,8 +1387,8 @@ Footer
 	{
 		font-size: 70%;
 		line-height: 1.4;
-		font-family: Helvetica, Arial, sans-serif;
-		color: #222;
+		font-family: $sansone;
+		color: $nearblack;
 	}
 	
 	#content .post ul.all_comments_listing div.item_body div.comment_meta a:link,
@@ -1410,8 +1432,8 @@ Theme My Login
 /* be more specific */
 #theme-my-login p.message
 {
-	background-color: #CBFFBD;
-	border: 1px solid #761D19;
+	background-color: $lightbackground;
+	border: 1px solid $accentdark;
 	padding: 15px;
 	margin: 0 0 20px 0;
 	font-size: 1em;
@@ -1427,8 +1449,8 @@ Theme My Login
 {
 	padding: 10px;
 	margin: 0 0 20px 0;
-	background: #CBFFBD;
-	border: 5px solid #B5BFB2;
+	background: $lightbackground;
+	border: 5px solid $kindofneutral;
 }
 
 .login form label
@@ -1475,7 +1497,7 @@ ul.tml-user-links
 	ul.tml-action-links li a,
 	ul.tml-user-links li a
 	{
-		background: #819565;
+		background: $headerbackground;
 		color: white;
 		font-family: Arial, sans-serif;
 		font-size: 0.9em;
@@ -1499,8 +1521,8 @@ a.download_link
 	display: block;
 	text-align: center;
 	font-size: 1.55em;
-	border: 3px solid #761D19;
-	background-color: #CBFFBD;
+	border: 3px solid $accentdark;
+	background-color: $lightbackground;
 	padding: 8px 20px;
 	margin: 0 0 10px 0;
 	-moz-border-radius: 12px;
@@ -1530,10 +1552,10 @@ a.download_link
 .wp-caption 
 { 
 	display: block;
-	border: 1px solid #B5BFB2; 
-	border-bottom: 0px solid #B5BFB2; 
+	border: 1px solid $kindofneutral; 
+	border-bottom: 0px solid $kindofneutral; 
 	text-align: center; 
-	background: #ccc; 
+	background: $miscgrey; 
 	margin: -10px 0 0 0; 
 	padding: 10px 10px 0 10px; 
 }
@@ -1541,10 +1563,10 @@ a.download_link
 .wp-caption-text
 { 
 	display: block;
-	border: 1px solid #B5BFB2; 
-	border-top: 0px solid #B5BFB2; 
+	border: 1px solid $kindofneutral; 
+	border-top: 0px solid $kindofneutral; 
 	text-align: center; 
-	background: #ccc; 
+	background: $miscgrey; 
 	padding: 0 10px 10px 10px; 
 }
 
