@@ -3,9 +3,12 @@ $sans: Helvetica, Arial, sans-serif;
 /* green variations */
 $background: #a3b3b3; /* #9AAB84; */
 
-$accentdark: #761D19;
+$accentdark: #222 /* #761D19 */;
 
 $kindofneutral: #B5BFB2;
+
+$nearblack: #222;
+$nearwhite: #222; /* #eee */
 
 /* TYPOGRAPHY */
 
@@ -40,16 +43,16 @@ abbr.truncation { speak: normal; }
 /* Page heading-related styles */
 #title h1
 {
-	font-family: $sans;
+	font-family: $serif;
 	font-size: 2em;
 	line-height: 1;
 	font-weight: normal;	
-	color: #eee;
+	color: $nearwhite;
 }
 
 #title h1 a
 {
-	color: #eee;
+	color: $nearwhite;
 }
 
 #title h1 a:focus
@@ -64,7 +67,7 @@ abbr.truncation { speak: normal; }
 	line-height: 1;
 	font-style :italic;
 	font-weight: normal;
-	color: #eee;
+	color: $nearwhite;
 }
 
 
@@ -461,7 +464,7 @@ a.reply_to_para:hover,
 .reply a:hover
 {	
 	color: $accentdark;
-	background: #eee;
+	background: $nearwhite;
 }
 
 div#respond h4

@@ -63,7 +63,23 @@ if( file_exists( TEMPLATEPATH.'/custom.css' )) {
 
 <!-- wp_head -->
 <?php wp_head(); ?>
+<style type="text/css">
 
+#book_header
+{
+	background-color: #a3b3b3;
+	}
+
+#title h1,
+#title h1 a
+{
+	color: #222222;}
+
+#book_header #tagline
+{
+	color: #222222;}
+
+</style>
 </head>
 
 
@@ -81,7 +97,7 @@ $_body_classes = cp_get_body_classes();
 
 
 
-<?php include (TEMPLATEPATH . '/style/templates/header_body.php'); ?>
+<?php  include (TEMPLATEPATH . '/style/templates/header_body.php'); ?>
 
 
 
