@@ -1,4 +1,4 @@
-blog = [["artistic development", "artistic research", "artistic team", "choreographers", "contemporary dance", "decisions", "discourse", "dramaturgy", "independent initiative", "insight", "open exchange", "possibilities", "refreshing view", "the hague", "the netherlands", ],
+blog_tags = [["artistic development", "artistic research", "artistic team", "choreographers", "contemporary dance", "decisions", "discourse", "dramaturgy", "independent initiative", "insight", "open exchange", "possibilities", "refreshing view", "the hague", "the netherlands", ],
 ["Andrea Boll", "Andrea Bozic", "Anouk van Dijk", "art schools", "artistic research", "choreographers", "current conditions", "dance academy", "David Weber-Krebs", "Duda Paiva", "Gabriela Tarcha", "Ibrahim Quraishi", "independent consultant", "interviews", "Keren Levi", "Liat Magnezy", "Liat Waysbort", "Mor Shani", "production houses", "research groups", "short description", "time and space", ],
 ["artistic research", "choreographers", "conclusion", "conclusions", "cross section", "discourse", "innovation", "insight", "landscape", "obstacles", "possibilities", "short description", "similarities and differences", "the netherlands", "visions", ],
 ["academics", "artistic knowledge", "artistic research", "artistic voice", "assumptions", "choreographers", "colleagues", "dance field", "dancers", "discourse", "everyday practice", "methodologies", "methodology", "personal signature", "presuppositions", "reflection", "self organization", "space and time", "voices", ],
@@ -42,14 +42,20 @@ blog = [["artistic development", "artistic research", "artistic team", "choreogr
 [],
 ]
 
-import pygraphviz as pgv
 
+import pygraphviz as pgv
 G=pgv.AGraph()
 
-for article in blog:
-    for tag in article:
-        G.add_node(tag)
+def combine(_list):
+    _output = []
+    for n, linker in enumerate(_list[:-1]):
+        for rechter in _list[n+1:]:
+            _output.append((linker, rechter))
+    return _output
 
+for article_tags in blog_tags:
+    for a, b in combine(article_tags):
+        G.add_edge(a,b)
 
 """
 for word in allwords:
@@ -58,5 +64,5 @@ for word in allwords:
 """
 G.node_attr.update(fontname= "League Gothic Extended", fontsize="28", height="1", shape="none")
 """
-G.layout()
+G.layout(prog='fdp')
 G.draw('a_cloud.svg')
