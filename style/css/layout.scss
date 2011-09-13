@@ -512,9 +512,9 @@ Main Wrapper
 /* Page wrapper is content column */
 #page_wrapper 
 {
-	width: 58%;
+	width: 720px;
 	padding: 0;
-	margin: 0 0 0 1%;
+	margin: 0 0 0 10px;
 	margin-bottom: 10px;
 	background: $white;
 	border: 5px solid $kindofneutral;
@@ -782,9 +782,9 @@ Sidebar
 	position: fixed !important;
 	z-index: 2000;
 	top: 108px;
-	left: 61%;
+	left: 748px;
 	/* float: left; */
-	width: 38%;
+	width: 480px;
 	margin: 0;
 	padding: 0;
 	background: transparent;
