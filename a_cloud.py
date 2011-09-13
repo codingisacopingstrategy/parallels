@@ -44,7 +44,7 @@ blog_tags = [["artistic development", "artistic research", "artistic team", "cho
 
 
 import pygraphviz as pgv
-G=pgv.AGraph()
+G=pgv.AGraph(outputorder="edgesfirst")
 
 def combine(_list):
     _output = []
@@ -57,12 +57,6 @@ for article_tags in blog_tags:
     for a, b in combine(article_tags):
         G.add_edge(a,b)
 
-"""
-for word in allwords:
-    G.add_node(word.upper())
-"""
-"""
-G.node_attr.update(fontname= "League Gothic Extended", fontsize="28", height="1", shape="none")
-"""
+G.node_attr.update(style='filled',fillcolor='white')
 G.layout(prog='fdp')
 G.draw('a_cloud.svg')
