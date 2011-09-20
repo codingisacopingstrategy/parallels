@@ -75,7 +75,6 @@ Book Header
   /*	border-bottom: 2px solid $kindofneutral; */
   position: fixed;
   z-index: 1999;
-  top: 32px;
   background: #a3b3b3;
   overflow: hidden; }
 
@@ -335,13 +334,15 @@ Main Wrapper
   width: 720px;
   padding: 0;
   margin: 0 0 0 10px;
-  margin-bottom: 10px;
-  background: white;
-  border: 5px solid #b5bfb2;
+  margin-bottom: 10px; }
+
+/* add this back for page 
+  background: $white;
+  border: 5px solid $kindofneutral;
   -webkit-box-shadow: #888 2px 2px 5px;
   -moz-box-shadow: #888 2px 2px 5px;
-  -khtml-box-shadow: #888 2px 2px 5px; }
-
+  -khtml-box-shadow: #888 2px 2px 5px;
+*/
 /* Contains post */
 #content {
   padding: 0 0 20px 0;

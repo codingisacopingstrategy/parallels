@@ -48,11 +48,5 @@ Separated this out for inclusion in multiple files.
 
 
 
-<div id="header">
-
-	<?php include (TEMPLATEPATH . '/style/templates/navigation.php'); ?>
-
-</div><!-- /header -->
-
 
 

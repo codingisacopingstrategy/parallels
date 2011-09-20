@@ -73,11 +73,11 @@ if( file_exists( TEMPLATEPATH.'/custom.css' )) {
 #title h1,
 #title h1 a
 {
-	color: #222222;}
+	color: #ffffff;}
 
 #book_header #tagline
 {
-	color: #222222;}
+	color: #ffffff;}
 
 </style>
 </head>
