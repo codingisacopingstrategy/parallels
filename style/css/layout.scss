@@ -535,15 +535,29 @@ Main Wrapper
 	margin: 0;
 	min-height: 620px;
 	height: 99%;
-	background: $white;
+}
+
+.cp_sidebar_toc #content, .cp_sidebar_comments #content 
+{
+  padding: 0 0 20px 0;
+  margin: 0;
+  min-height: 620px;
+  height: 99%;
 }
 
 	.post 
 	{
-		/* To accomodate our left aligned speech bubbles */
-		padding: 45px 0;
 		margin: 0 60px 0 70px;
 	}
+	
+	.cp_sidebar_toc .post, .cp_sidebar_comments .post {
+    /* To accomodate our left aligned speech bubbles */
+    background: none repeat scroll 0 0 white;
+    margin: 0 60px 0 70px;
+	
+	}
+	
+	
 	
 	.full_width .post 
 	{
@@ -570,7 +584,13 @@ Main Wrapper
 	
 	.archive_item
 	{
-		padding: 40px 0 10px 0;
+		padding: 0px 0 0px 0;
+		margin-bottom: 50px;
+		background-color: white;
+	}
+	.photo_archive_item {
+	width: 164px;
+	float: left;
 	}
 	
 	.postmetadata
@@ -788,22 +808,40 @@ Sidebar
 	margin: 0;
 	padding: 0;
 	background: transparent;
-	-webkit-box-shadow: #888 2px 2px 5px;
-	-moz-box-shadow: #888 2px 2px 5px;
-	-khtml-box-shadow: #888 2px 2px 5px;
+}
+
+.cp_sidebar_toc #sidebar, .cp_sidebar_comments #sidebar 
+{
+  position: fixed !important;
+  z-index: 2000;
+  top: 108px;
+  left: 748px;
+  /* float: left; */
+  width: 480px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  -webkit-box-shadow: #888 2px 2px 5px;
+  -moz-box-shadow: #888 2px 2px 5px;
+  -khtml-box-shadow: #888 2px 2px 5px;
 }
 
 	/* Sidebar style */
 	#sidebar_inner
 	{
 		padding: 5px 5px 5px 5px;
-		background: $white;
-		border: 3px solid $kindofneutral;
-		-moz-border-radius: 8px;
-		-khtml-border-radius: 8px;
-		-webkit-border-radius: 8px;
-		border-radius: 8px;
 	}
+
+  .cp_sidebar_toc #sidebar_inner, .cp_sidebar_comments #sidebar_inner
+  {
+    padding: 5px 5px 5px 5px;
+    background: $white;
+    border: 3px solid $kindofneutral;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+  }
 	
 		/* toc header */
 		div.sidebar_header
@@ -834,7 +872,7 @@ Sidebar
 /* Table of Contents sidebar */
 #toc_sidebar
 {
-	display: none;
+
 }
 	
 body.cp_sidebar_toc #toc_sidebar

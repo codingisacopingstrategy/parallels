@@ -11,7 +11,9 @@ global $commentpress_obj, $post;
 
 // if we have the plugin enabled...
 if ( is_object( $commentpress_obj ) ) {
+?>
 
+<?php
 	
 	
 	// get sidebar
@@ -22,7 +24,8 @@ if ( is_object( $commentpress_obj ) ) {
 			
 		// get comments sidebar
 		include (TEMPLATEPATH . '/style/templates/comments_sidebar.php');
-	
+        // get toc
+        include( TEMPLATEPATH . '/style/templates/toc_sidebar.php' );
 	// test for Archive Sidebar (everything else)
 	} elseif ( $sidebar_flag == 'archive' ) {
 	
@@ -30,11 +33,13 @@ if ( is_object( $commentpress_obj ) ) {
 		include (TEMPLATEPATH . '/style/templates/archive_sidebar.php');
 		
 	}
+    
+    else {
+                include( TEMPLATEPATH . '/style/templates/toc_sidebar.php' );
+    }
 	
 	
 	
-	// always include TOC
-	include( TEMPLATEPATH . '/style/templates/toc_sidebar.php' );
 	
 
 

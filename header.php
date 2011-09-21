@@ -67,7 +67,7 @@ if( file_exists( TEMPLATEPATH.'/custom.css' )) {
 
 #book_header
 {
-	background-color: #a3b3b3;
+	background-color: transparent;
 	}
 
 #title h1,
