@@ -540,8 +540,8 @@ class CommentPressDisplay {
 		);
 		
 		// use Wordpress function to echo
+		$defaults = substr($defaults['exclude'], strpos($defaults['exclude'], ',') + 1);
 		wp_list_pages( $defaults );
-		
 		
 		
 		/*
