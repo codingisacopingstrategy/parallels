@@ -799,10 +799,10 @@ Sidebar
 /* Default sidebar */
 #sidebar 
 {
-	position: fixed !important;
+	position: absolute;
 	z-index: 2000;
-	top: 108px;
-	left: 748px;
+	top: 0px;
+	left: 712px;
 	/* float: left; */
 	width: 480px;
 	margin: 0;
@@ -812,10 +812,10 @@ Sidebar
 
 .cp_sidebar_toc #sidebar, .cp_sidebar_comments #sidebar 
 {
-  position: fixed !important;
+  position: absolute;
   z-index: 2000;
-  top: 108px;
-  left: 748px;
+  top: 0px;
+  left: 712px;
   /* float: left; */
   width: 480px;
   margin: 0;
