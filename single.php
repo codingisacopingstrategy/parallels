@@ -77,7 +77,6 @@
 
 
 
-		<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
 
 
 
@@ -111,7 +110,9 @@
 
 	</div><!-- /post -->
 
-
+    <div class="post">
+        <?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
+    </div>
 	
 <?php endwhile; else: ?>
 

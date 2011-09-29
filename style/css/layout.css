@@ -357,12 +357,12 @@ Main Wrapper
   height: 99%; }
 
 .post {
-  margin: 0 60px 0 70px; }
+  margin: 0 60px 0px 70px; }
 
 .cp_sidebar_toc .post, .cp_sidebar_comments .post {
   /* To accomodate our left aligned speech bubbles */
   background: none repeat scroll 0 0 white;
-  margin: 0 60px 0 70px; }
+  margin: 0 60px 50px 70px; }
 
 .full_width .post {
   /* For Title Page, to allow Book Cover image */

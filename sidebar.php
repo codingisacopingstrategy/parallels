@@ -11,33 +11,25 @@ global $commentpress_obj, $post;
 
 // if we have the plugin enabled...
 if ( is_object( $commentpress_obj ) ) {
-?>
-
-<?php
-	
-	
 	// get sidebar
 	$sidebar_flag = $commentpress_obj->get_default_sidebar();
 
 	// is it a commentable page?
 	if ( $sidebar_flag == 'comments' ) {
-			
 		// get comments sidebar
 		include (TEMPLATEPATH . '/style/templates/comments_sidebar.php');
         // get toc
-        include( TEMPLATEPATH . '/style/templates/toc_sidebar.php' );
 	// test for Archive Sidebar (everything else)
-	} elseif ( $sidebar_flag == 'archive' ) {
 	
-		// get archive sidebar
-		include (TEMPLATEPATH . '/style/templates/archive_sidebar.php');
-		
 	}
-    
-    else {
-                include( TEMPLATEPATH . '/style/templates/toc_sidebar.php' );
+    if ( $sidebar_flag == 'archive' ) {
+        // get archive sidebar
+        include (TEMPLATEPATH . '/style/templates/archive_sidebar.php');
+        
     }
-	
+	else {
+	    include( TEMPLATEPATH . '/style/templates/toc_sidebar.php' );
+	}
 	
 	
 	
