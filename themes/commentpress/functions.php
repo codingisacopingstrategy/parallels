@@ -379,7 +379,7 @@ function cp_get_body_classes(
 	
 	// construct attribute
 	$_body_classes = ' class="'.$sidebar_class.$layout_class.'"';
-
+    if (is_tag()) { $_body_classes = ' class="cp_sidebar_archive"'; }
 
 
 	// --<

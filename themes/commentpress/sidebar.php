@@ -22,7 +22,7 @@ if ( is_object( $commentpress_obj ) ) {
 	// test for Archive Sidebar (everything else)
 	
 	}
-    if ( $sidebar_flag == 'archive' ) {
+    if ( $sidebar_flag == 'archive' || is_tag() ) {
         // get archive sidebar
         include (TEMPLATEPATH . '/style/templates/archive_sidebar.php');
         
