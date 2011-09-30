@@ -553,7 +553,7 @@ Main Wrapper
 	
 	.cp_sidebar_toc .post, .cp_sidebar_comments .post {
     /* To accomodate our left aligned speech bubbles */
-    background: none repeat scroll 0 0 white;
+    background: none repeat scroll 0 0 $white;
     margin: 0 60px 50px 70px;
 	
 	}
@@ -586,9 +586,20 @@ Main Wrapper
 	.archive_item
 	{
 		padding: 0px 0 0px 0;
-		margin-bottom: 50px;
-		background-color: white;
+		margin-bottom: 20px;
+		background-color: $white;
 	}
+	
+	.archive_item_tags
+	{
+	 margin-bottom: 50px;
+	}
+	
+	.archive_item_tags span
+	{
+	 background-color: $white;
+	}
+	
 	.photo_archive_item {
 	width: 164px;
 	float: left;

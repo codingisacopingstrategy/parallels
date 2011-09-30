@@ -384,7 +384,13 @@ Main Wrapper
 
 .archive_item {
   padding: 0px 0 0px 0;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  background-color: white; }
+
+.archive_item_tags {
+  margin-bottom: 50px; }
+
+.archive_item_tags span {
   background-color: white; }
 
 .photo_archive_item {
