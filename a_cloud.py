@@ -44,7 +44,7 @@ blog_tags = [["artistic development", "artistic research", "artistic team", "cho
 
 
 import pygraphviz as pgv
-G=pgv.AGraph(outputorder="edgesfirst")
+G=pgv.AGraph(outputorder="edgesfirst",dpi="48",bgcolor="transparent")
 
 def combine(_list):
     _output = []
@@ -58,5 +58,10 @@ for article_tags in blog_tags:
         G.add_edge(a,b)
 
 G.node_attr.update(style='filled',fillcolor='white')
+
+for node in G.iternodes():
+    node.attr['href']= '/tag/' + node.lower().replace(" ","-")
+
 G.layout(prog='fdp')
-G.draw('a_cloud.svg')
+G.draw('a_cloud.png')
+G.draw('a_cloud.map',format='cmapx')
