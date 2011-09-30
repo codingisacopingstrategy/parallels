@@ -61,8 +61,12 @@ if( file_exists( TEMPLATEPATH.'/custom.css' )) {
 
 } ?>
 
+
+
+
 <!-- wp_head -->
 <?php wp_head(); ?>
+<script src="<?php bloginfo('template_directory'); ?>/style/js/drawing.js"></script>
 <style type="text/css">
 
 #book_header

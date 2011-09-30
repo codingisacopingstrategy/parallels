@@ -76,7 +76,8 @@ Book Header
   position: fixed;
   z-index: 1999;
   background: #a3b3b3;
-  overflow: hidden; }
+  overflow: hidden;
+  top: 0; }
 
 #titlewrap {
   float: left;

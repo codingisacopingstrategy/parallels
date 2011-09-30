@@ -917,7 +917,7 @@ Array.prototype.remove_item = function( item ) {
 	$.px_to_num = function( pix ) {
 	
 		// --<
-		return parseInt( pix.substring( 0, (pix.length - 2) ) );
+		return typeof pix === 'undefined' ? null : parseInt( pix.substring( 0, (pix.length - 2) ) );
 	
 	};
 	
