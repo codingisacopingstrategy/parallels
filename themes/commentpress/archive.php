@@ -56,7 +56,7 @@
 		</div><!-- /archive_item -->
 	
 	
-		<div class="archive_item_tags"><?php the_tags('<span>', '</span> <span>', '</span>'); ?></div>
+		<div class="archive_item_tags"><?php the_tags('<div>', '</div> <div>', '</div>'); ?></div>
 	<?php endwhile; ?>
 
 

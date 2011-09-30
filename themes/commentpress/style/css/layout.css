@@ -390,8 +390,10 @@ Main Wrapper
 .archive_item_tags {
   margin-bottom: 50px; }
 
-.archive_item_tags span {
-  background-color: white; }
+.archive_item_tags div {
+  background-color: white;
+  margin: 2px;
+  float: right; }
 
 .photo_archive_item {
   width: 164px;

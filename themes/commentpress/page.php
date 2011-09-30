@@ -142,8 +142,9 @@
 	
 	?>
 
-
 </div><!-- /post -->
+
+<div class="archive_item_tags"><?php the_tags('<div>', '</div> <div>', '</div>'); ?></div>
 
 
 

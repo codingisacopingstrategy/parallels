@@ -595,9 +595,11 @@ Main Wrapper
 	 margin-bottom: 50px;
 	}
 	
-	.archive_item_tags span
+	.archive_item_tags div
 	{
 	 background-color: $white;
+	 margin: 2px;
+	 float: right;
 	}
 	
 	.photo_archive_item {
