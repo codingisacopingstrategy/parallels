@@ -388,7 +388,8 @@ Main Wrapper
   background-color: white; }
 
 .archive_item_tags {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  overflow: auto; }
 
 .archive_item_tags div {
   background-color: white;
