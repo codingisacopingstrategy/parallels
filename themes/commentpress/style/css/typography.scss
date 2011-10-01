@@ -10,6 +10,9 @@ $kindofneutral: #B5BFB2;
 $nearblack: #222;
 $nearwhite: #222; /* #eee */
 
+
+$white: #ffffff;
+
 /* TYPOGRAPHY */
 
 $serif: Georgia, serif;
@@ -131,9 +134,14 @@ ul#toc li a:visited
 	font-size: 1.55em;
 	font-weight: normal;
 	color: $accentdark;
-	margin: 8px 0 16px 0;
-	padding-left: 7px;
-	padding-right: 7px;
+	margin: 8px 0 50px 0;
+}
+
+.post h2 span
+{
+  background-color: $white;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .post h2 a:link,
@@ -657,3 +665,8 @@ Verdana, Geneva, Tahoma, sans-serif - p
 Verdana, Tahoma, Geneva, sans-serif - t
 
 */
+
+
+h2 span {
+  background-color: $white;
+}

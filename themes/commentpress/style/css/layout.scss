@@ -554,7 +554,7 @@ Main Wrapper
 	.cp_sidebar_toc .post, .cp_sidebar_comments .post {
     /* To accomodate our left aligned speech bubbles */
     background: none repeat scroll 0 0 $white;
-    margin: 0 60px 50px 70px;
+    margin: 0 9px 50px 70px;
 	
 	}
 	
@@ -606,6 +606,7 @@ Main Wrapper
 	.photo_archive_item {
 	width: 164px;
 	float: left;
+	margin-right: 14px;
 	}
 	
 	.postmetadata

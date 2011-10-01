@@ -28,7 +28,7 @@
 	<?php /* If this is a category archive */ if (is_category()) { ?>
 	<!--<h2>Archive for the &#8216;<?php single_cat_title(); ?>&#8217; Category</h2>-->
 	<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-	<h2><?php single_tag_title(); ?></h2>
+	<h2><span><?php single_tag_title(); ?><span></h2>
 	<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
 	<h2>Blog Archive for <?php the_time('F jS, Y'); ?></h2>
 	<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>

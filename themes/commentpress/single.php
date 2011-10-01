@@ -21,23 +21,15 @@
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-
-
 	<div class="post" id="post-<?php the_ID(); ?>">
 
+<h2><span><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></span></h2>
 
 
-		<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-
-		<p class="postname"><?php the_time('l, F jS, Y') ?> by <?php the_author_posts_link(); ?></p>
+	<?php global $more; $more = true; the_content(''); ?>
 
 
-
-		<?php global $more; $more = true; the_content(''); ?>
-
-
-
+<div class="archive_item">
 		<?php
 		
 		// NOTE: Comment permalinks are filtered if the comment is not on the first page 
@@ -106,13 +98,10 @@
 			
 		?></p>
 
+</div><!-- /archive_item -->
 
-
+<div class="archive_item_tags"><?php the_tags('<div>', '</div> <div>', '</div>'); ?></div>
 	</div><!-- /post -->
-
-    <div class="post">
-        <?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
-    </div>
 	
 <?php endwhile; else: ?>
 
