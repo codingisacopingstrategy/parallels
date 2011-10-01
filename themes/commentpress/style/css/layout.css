@@ -1,14 +1,15 @@
 /* green variations */
+/* #CBFFBD; hue = hue-48 */
 /* #819565; */
 /* greys */
 /* with blue (once)*/
-/* with green */
+/* #B5BFB2 hue = hue-48 */
 /* (once) */
 /* more random greys */
 /* LAYOUT */
 /* text highlighting block */
 .selected_para {
-  background-color: #cbffbd;
+  background-color: #fffebd;
   margin: 0;
   padding: 7px;
   -moz-border-radius: 10px;
@@ -44,7 +45,7 @@ a.skip:visited {
   overflow: hidden;
   z-index: 2000;
   font-size: 1.55em;
-  border: 5px solid #b5bfb2;
+  border: 5px solid #bfbfb2;
   margin: 0;
   padding: 10px 0;
   background: #a3b3b3;
@@ -136,7 +137,7 @@ Wordpress user links
 #user_links ul li a:active,
 #user_links ul li a:focus {
   color: #a3b3b3;
-  background-color: #cbffbd; }
+  background-color: #fffebd; }
 
 /* 
 ---------------------------------------------------------------------
@@ -158,7 +159,7 @@ Header
   float: left;
   width: 100%;
   background: #bfbfbf url(../images/buttonbar_bgr.jpg) repeat-x;
-  border-bottom: 2px solid #b5bfb2;
+  border-bottom: 2px solid #bfbfb2;
   height: 30px; }
 
 /* define rollover action */
@@ -426,7 +427,7 @@ span.commenticonbox a.para_permalink {
   text-indent: -999px; }
 
 span.commenticonbox a.para_permalink:focus {
-  background-color: #cbffbd; }
+  background-color: #fffebd; }
 
 span.commenticonbox a.no_comments {
   background: transparent url("../images/icons/comment_add.png") no-repeat; }
@@ -501,8 +502,8 @@ blockquote span.commenticonbox {
   padding: 5px 0;
   margin: 15px 0;
   list-style-type: none;
-  border-top: 1px solid #b5bfb2;
-  border-bottom: 1px dotted #b5bfb2; }
+  border-top: 1px solid #bfbfb2;
+  border-bottom: 1px dotted #bfbfb2; }
 
 div.multipager .multipager_sep {
   visibility: hidden; }
@@ -568,7 +569,7 @@ Sidebar
 .cp_sidebar_toc #sidebar_inner, .cp_sidebar_comments #sidebar_inner {
   padding: 5px 5px 5px 5px;
   background: white;
-  border: 3px solid #b5bfb2;
+  border: 3px solid #bfbfb2;
   -moz-border-radius: 8px;
   -khtml-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -576,7 +577,7 @@ Sidebar
 
 /* toc header */
 div.sidebar_header {
-  border-bottom: 2px solid #b5bfb2;
+  border-bottom: 2px solid #bfbfb2;
   padding: 3px;
   height: 25px;
   color: #444;
@@ -713,7 +714,7 @@ body.cp_sidebar_comments #comments_sidebar {
 
 div.comments_container {
   padding: 10px;
-  border-top: 1px solid #b5bfb2; }
+  border-top: 1px solid #bfbfb2; }
 
 /* comments in page */
 #comments_in_page_wrapper div.comments_container {
@@ -722,7 +723,7 @@ div.comments_container {
 /* paragraph header text */
 .comments_container h3 {
   background: #EFEFEF;
-  border-bottom: 1px solid #b5bfb2; }
+  border-bottom: 1px solid #bfbfb2; }
 
 /* wrapper for all comments for a partcular paragraph */
 div.paragraph_wrapper {
@@ -732,7 +733,7 @@ div.paragraph_wrapper {
 
 .comment-identifier {
   margin: 0 0 0 0;
-  border-bottom: 2px solid #b5bfb2;
+  border-bottom: 2px solid #bfbfb2;
   padding-bottom: 5px; }
 
 .post .comment-identifier {
@@ -741,7 +742,7 @@ div.paragraph_wrapper {
 .comment-content {
   clear: left;
   padding: 10px 5px 0 5px;
-  border-bottom: 1px dashed #b5bfb2;
+  border-bottom: 1px dashed #bfbfb2;
   margin: 0;
   overflow: hidden; }
 
@@ -753,12 +754,12 @@ div.paragraph_wrapper {
 a.comment-reply-link {
   display: block;
   padding: 4px 0 4px 4px;
-  border-bottom: 1px dashed #b5bfb2; }
+  border-bottom: 1px dashed #bfbfb2; }
 
 div.reply_to_para {
   padding: 0;
   margin: 0;
-  border-bottom: 1px dashed #b5bfb2; }
+  border-bottom: 1px dashed #bfbfb2; }
 
 /* wrapper for all comments */
 ol.commentlist {
@@ -813,7 +814,7 @@ div.reply_to_para {
 
 /* wrapper for comment form */
 div#respond {
-  background-color: #cbffbd;
+  background-color: #fffebd;
   margin: 0;
   padding: 8px 8px; }
 
@@ -836,7 +837,7 @@ textarea#comment {
   margin: 0;
   padding: 6px 0;
   background: white;
-  border-bottom: 1px solid #b5bfb2; }
+  border-bottom: 1px solid #bfbfb2; }
 
 .post ol.children li,
 .post ul.children li {
@@ -863,7 +864,7 @@ textarea#comment {
   background-color: white;
   margin: 12px 0;
   padding: 10px;
-  background-color: #cbffbd; }
+  background-color: #fffebd; }
 
 /* comments */
 #respond_in_page_wrapper textarea#comment {
@@ -890,7 +891,7 @@ Footer
 #footer_inner a {
   color: #a3b3b3;
   color: #BBC5B9;
-  color: #b5bfb2; }
+  color: #bfbfb2; }
 
 #footer_inner {
   padding: 5px; }
@@ -906,7 +907,7 @@ Footer
   list-style: none;
   padding: 0;
   margin: 0 7px 30px 7px;
-  border-bottom: 1px solid #b5bfb2; }
+  border-bottom: 1px solid #bfbfb2; }
 
 #content .post ul.all_comments_listing ul {
   list-style-type: none;
@@ -951,7 +952,7 @@ Footer
   padding: 0; }
 
 #content .post ul.all_comments_listing div.item_body div.comment_wrapper {
-  border-top: 2px solid #b5bfb2;
+  border-top: 2px solid #bfbfb2;
   padding: 1px 0 0 0;
   margin: 10px 0 0 0;
   font-family: Georgia;
@@ -990,7 +991,7 @@ Theme My Login
 
 /* be more specific */
 #theme-my-login p.message {
-  background-color: #cbffbd;
+  background-color: #fffebd;
   border: 1px solid #761d19;
   padding: 15px;
   margin: 0 0 20px 0;
@@ -1005,8 +1006,8 @@ Theme My Login
 .login form {
   padding: 10px;
   margin: 0 0 20px 0;
-  background: #cbffbd;
-  border: 5px solid #b5bfb2; }
+  background: #fffebd;
+  border: 5px solid #bfbfb2; }
 
 .login form label {
   display: block; }
@@ -1057,7 +1058,7 @@ a.download_link {
   text-align: center;
   font-size: 1.55em;
   border: 3px solid #761d19;
-  background-color: #cbffbd;
+  background-color: #fffebd;
   padding: 8px 20px;
   margin: 0 0 10px 0;
   -moz-border-radius: 12px;
@@ -1079,8 +1080,8 @@ a.download_link {
 
 .wp-caption {
   display: block;
-  border: 1px solid #b5bfb2;
-  border-bottom: 0px solid #b5bfb2;
+  border: 1px solid #bfbfb2;
+  border-bottom: 0px solid #bfbfb2;
   text-align: center;
   background: #cccccc;
   margin: -10px 0 0 0;
@@ -1088,8 +1089,8 @@ a.download_link {
 
 .wp-caption-text {
   display: block;
-  border: 1px solid #b5bfb2;
-  border-top: 0px solid #b5bfb2;
+  border: 1px solid #bfbfb2;
+  border-top: 0px solid #bfbfb2;
   text-align: center;
   background: #cccccc;
   padding: 0 10px 10px 10px; }
