@@ -54,7 +54,7 @@
 	if ( $hide == 'show' ) {
 
 	?>
-	<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+	<h2><span><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></span></h2>
 	<?php
 	
 	}
@@ -62,7 +62,7 @@
 	?>
 	
 
-
+	<div class="archive_item">
 	<?php global $more; $more = false; the_content('', true); ?>
 
 
@@ -141,7 +141,7 @@
 	} 
 	
 	?>
-
+</div><!-- /archive_item -->
 </div><!-- /post -->
 
 <div class="archive_item_tags"><?php the_tags('<div>', '</div> <div>', '</div>'); ?></div>

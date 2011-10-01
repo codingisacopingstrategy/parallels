@@ -26,10 +26,9 @@
 <h2><span><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></span></h2>
 
 
+<div class="archive_item">
 	<?php global $more; $more = true; the_content(''); ?>
 
-
-<div class="archive_item">
 		<?php
 		
 		// NOTE: Comment permalinks are filtered if the comment is not on the first page 
