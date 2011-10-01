@@ -5,7 +5,6 @@
 <div id="sidebar_inner">
 
 <?php
-
 // plugin global
 global $commentpress_obj, $post;
 
@@ -22,7 +21,7 @@ if ( is_object( $commentpress_obj ) ) {
 	// test for Archive Sidebar (everything else)
 	
 	}
-    if ( $sidebar_flag == 'archive' || is_tag() ) {
+    if ( strpos($_SERVER['REQUEST_URI'], "report") === false ) {
         // get archive sidebar
         include (TEMPLATEPATH . '/style/templates/archive_sidebar.php');
         
