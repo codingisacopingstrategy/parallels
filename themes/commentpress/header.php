@@ -67,6 +67,12 @@ if( file_exists( TEMPLATEPATH.'/custom.css' )) {
 <!-- wp_head -->
 <?php wp_head(); ?>
 <script src="<?php bloginfo('template_directory'); ?>/style/js/drawing.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/style/js/jquery.backstretch.min.js"></script>
+<script>
+	$(function() {
+		$.backstretch("<?php bloginfo('template_directory'); ?>/style/images/backgrounds/test_grijs_groen.jpg", {speed: 150});
+	});
+</script>
 <style type="text/css">
 
 #book_header
