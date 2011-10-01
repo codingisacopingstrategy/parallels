@@ -18,8 +18,9 @@
 
 <div id="content" class="clearfix">
 
-Test!
-
+<?php $map = rand(0,9); ?>
+<img src="/wp-content/home_cloud_<?php echo $map; ?>.png" usemap="#mainmap"/>
+<?php echo file_get_contents('/home/s/apps/parallels.schr.fr/public/wp-content/home_cloud_' . $map . '.map'); ?>
 </div><!-- /content -->
 
 
