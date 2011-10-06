@@ -17,6 +17,22 @@ $white: #ffffff;
 
 $serif: Georgia, serif;
 
+
+@font-face {
+    font-family: 'WDroge';
+    src: url('w-droge-itinerary-webfont.eot');
+    src: url('w-droge-itinerary-webfont.eot?#iefix') format('embedded-opentype'),
+         url('w-droge-itinerary-webfont.woff') format('woff'),
+         url('w-droge-itinerary-webfont.ttf') format('truetype'),
+         url('w-droge-itinerary-webfont.svg#WDrogeDrogeItinerary') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$headerfont: 'WDroge';
+
+
 /* This helps to identify headings at the initial build stage */
 h1, h2, h3, h5, h5, h6 { font-weight: bold }
 
@@ -46,7 +62,7 @@ abbr.truncation { speak: normal; }
 /* Page heading-related styles */
 #title h1
 {
-	font-family: $serif;
+	font-family: $headerfont;
 	font-size: 2em;
 	line-height: 1;
 	font-weight: normal;	
