@@ -68,9 +68,23 @@ if( file_exists( TEMPLATEPATH.'/custom.css' )) {
 <?php wp_head(); ?>
 <script src="<?php bloginfo('template_directory'); ?>/style/js/drawing.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/style/js/jquery.backstretch.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/style/js/jquery.lineto.js"></script>
 <script>
-	$(function() {
-		$.backstretch("<?php bloginfo('template_directory'); ?>/style/images/backgrounds/test_grijs_groen.jpg", {speed: 150});
+var $ = jQuery.noConflict();
+$(function() {
+if ( $(".archive_item").length && $("#sidebar li img").length ) {
+    $(".archive_item").each(function() {
+        $(this).lineTo($($("#sidebar li img")[1]));
+        $(this).next().children().each(function() {
+            $(this).lineTo($(this).parent().prev())
+        });
+    });
+}
+});
+</script>
+<script>
+	jQuery(function() {
+		jQuery.backstretch("<?php bloginfo('template_directory'); ?>/style/images/backgrounds/test_grijs_groen.jpg", {speed: 150});
 	});
 </script>
 <style type="text/css">
