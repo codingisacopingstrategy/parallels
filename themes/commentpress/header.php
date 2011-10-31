@@ -101,7 +101,10 @@ if ( $(".archive_item").length && $("#sidebar li img").length ) {
 
 #book_header #tagline
 {
-	color: #ffffff;}
+	color: #ffffff;
+    font-family: WDroge;
+    font-style: normal;
+    font-weight: bold;}
 
 </style>
 </head>
