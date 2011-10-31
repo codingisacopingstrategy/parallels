@@ -540,39 +540,19 @@ Sidebar
   position: absolute;
   z-index: 2000;
   top: 0px;
-  left: 712px;
+  left: 752px;
   /* float: left; */
-  width: 480px;
+  width: 440px;
   margin: 0;
   padding: 0;
   background: transparent; }
-
-.cp_sidebar_toc #sidebar, .cp_sidebar_comments #sidebar {
-  position: absolute;
-  z-index: 2000;
-  top: 0px;
-  left: 712px;
-  /* float: left; */
-  width: 480px;
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  -webkit-box-shadow: #888 2px 2px 5px;
-  -moz-box-shadow: #888 2px 2px 5px;
-  -khtml-box-shadow: #888 2px 2px 5px; }
 
 /* Sidebar style */
 #sidebar_inner {
   padding: 5px 5px 5px 5px; }
 
 .cp_sidebar_toc #sidebar_inner, .cp_sidebar_comments #sidebar_inner {
-  padding: 5px 5px 5px 5px;
-  background: white;
-  border: 3px solid #bfbfb2;
-  -moz-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px; }
+  background: white; }
 
 /* toc header */
 div.sidebar_header {
