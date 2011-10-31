@@ -53,11 +53,12 @@ def combine(_list):
             _output.append((linker, rechter))
     return _output
 
+G.node_attr.update(style='filled',fillcolor='white',shape='box')
+
 for article_tags in blog_tags:
     for a, b in combine(article_tags):
         G.add_edge(a,b)
 
-G.node_attr.update(style='filled',fillcolor='white')
 
 for node in G.iternodes():
     node.attr['href']= '/tag/' + node.lower().replace(" ","-")

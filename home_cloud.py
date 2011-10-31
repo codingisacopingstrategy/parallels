@@ -40,7 +40,7 @@ from textwrap import fill
 
 import pygraphviz as pgv
 G=pgv.AGraph(outputorder="edgesfirst",dpi="48",bgcolor="transparent")
-G.node_attr.update(style='filled',fillcolor='white')
+G.node_attr.update(style='filled',fillcolor='white',shape='box')
 
 new_quotes = {}
 for quote in quotes.keys():
@@ -57,6 +57,7 @@ def combine(_list):
             _output.append((linker, rechter))
     return _output
 
+## Pygraphviz can’t transparently handle line breaks:s
 
 for a, b in combine(quote_sample):
     G.add_edge(a.replace("\n","\\n"),b.replace("\n","\\n"))
