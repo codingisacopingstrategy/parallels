@@ -679,6 +679,10 @@ body.cp_sidebar_archive #archive_sidebar {
 body.cp_sidebar_comments #comments_sidebar {
   display: block; }
 
+body.cp_sidebar_comments #comments_sidebar ul li {
+  display: inline;
+  padding: 5px; }
+
 #cp_minimise_comments,
 #cp_minimise_all_comments {
   cursor: pointer;
