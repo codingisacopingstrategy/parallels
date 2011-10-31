@@ -33,7 +33,6 @@ Template Name: Welcome
 <div class="post" id="post-<?php the_ID(); ?>">
 
 
-
 	<?php
 	
 	// init hide (show by default
@@ -65,7 +64,8 @@ Template Name: Welcome
 	if ( $hide == 'show' ) {
 
 	?>
-	<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+	<h2><a href="<?php the_permalink() ?>"><span><?php the_title(); ?></span></a></h2>
+    <div class="archive_item">
 	<?php
 	
 	}
@@ -138,7 +138,7 @@ Template Name: Welcome
 	<?php edit_post_link('Edit this entry', '<p class="edit_link">', '</p>'); ?>
 
 
-
+</div><!-- /archive_item -->
 </div><!-- /post -->
 
 
