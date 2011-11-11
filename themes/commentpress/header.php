@@ -82,12 +82,10 @@ if ( $(".archive_item").length && $("#sidebar li img").length ) {
 }
 });
 </script>
-<script>
-	jQuery(function() {
-		jQuery.backstretch("<?php bloginfo('template_directory'); ?>/style/images/backgrounds/test_grijs_groen.jpg", {speed: 150});
-	});
-</script>
 <style type="text/css">
+body {
+    background : url(<?php bloginfo('template_directory'); ?>/style/images/backgrounds/background.png);
+}
 
 #book_header
 {
